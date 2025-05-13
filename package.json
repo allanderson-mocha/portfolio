@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "Website Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanderson-mocha/portfolio.git"
+  },
+  "author": "Allan Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allanderson-mocha/portfolio/issues"
+  },
+  "homepage": "https://github.com/allanderson-mocha/portfolio#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
