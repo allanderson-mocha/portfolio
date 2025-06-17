@@ -8,33 +8,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lugrasimo&display=swap" rel="stylesheet">
   </head>
   
   <body>
-    <nav>
-      <div style="font-style: Roboto; font-size: 1.2rem; flex: 2;">ALLAN ANDERSON</div>
-      <div class="menu-bar">
-        <div class="menu-option"><a href="https://www.youtube.com/watch?v=G3e-cpL7ofc">MY LIFE</a></div>
-        <div class="menu-option"><a href="https://www.youtube.com/watch?v=G3e-cpL7ofc">MY WORK</a></div>
-        <div class="menu-option"><a href="https://www.youtube.com/watch?v=G3e-cpL7ofc">MY DREAM</a></div>
+    <section class="sticky-wrapper">
+      <nav>
+        <div style="font-family: Lugrasimo, Roboto, sans-serif; font-size: 1.2rem; flex: 2; font-weight: 500;">Allan Anderson</div>
+        <div class="menu-bar">
+          <div class="menu-option"><a href="">MY LIFE</a></div>
+          <div class="menu-option"><a href="">MY WORK</a></div>
+          <div class="menu-option"><a href="">MY DREAM</a></div>
+        </div>
+        <div style="font-family: Roboto, sans-serif; font-weight: 600; display: flex; flex: 2; justify-content:end;">
+          <a href="https://drive.google.com/file/d/11M4CrvhuC9pN6Sanh3MR4WEFlkg9gpB2/view?usp=sharing" target="_blank">RESUME</a>
+        </div>
+      </nav>
+
+      <div id="updates-banner">
+        <span>This website is still extremely barebones! Changes and improvements will appear as I learn the secret arts of HTML and CSS. <strong>Current version: 0.20</strong></span>
+        <button id="close-banner">&times;</button>
       </div>
-      <div style="font-style: Roboto; display: flex; flex: 2; justify-content:end;">
-        <p>CONTACT ME</p>
-      </div>
-    </nav>
+    </section>
 
     <section class="hero">
       <div class="overlay">
         <h1>Welcome to My Projects</h1>
-        <p>Explore the things I've built</p>
+        <p>Explore the things I've made</p>
       </div>
     </section>
 
     <section class="grid">
-      <div class="card fade-in">The SCavenger</div>
-      <div class="card fade-in">Light Table</div>
-      <div class="card fade-in">Snake... in Verilog!</div>
-      <div class="card fade-in">This website!</div>
+      <a href="https://github.com/allanderson-mocha/SCavenger" target="_blank" class="card fade-in" style="transition-delay: 0s;">The SCavenger</a>
+      <a href="https://github.com/allanderson-mocha/VerilogSnake" target="_blank" class="card fade-in" style="transition-delay: 0.2s;">Snake in Verilog!</a>
+      <a href="https://github.com/allanderson-mocha/portfolio" target="_blank" class="card fade-in" style="transition-delay: 0.4s;">This very website! (WIP)</a>
+      <!--<div class="card fade-in" style="transition-delay: 0.6s;"></div>-->
+    </section>
+
+    <section class="contacts">
+      <div>
+      </div>
     </section>
 
     <script src="script.js"></script>

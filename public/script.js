@@ -10,10 +10,13 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('sticky-active')
   }
  
-  elements.forEach(el => {
-    if (el.getBoundingClientRect().top < window.innerHeight - 50) {
-      el.classList.add('visible');
-    }
+});
+
+elements.forEach(el => {
+    el.classList.add('visible');
   });
+
+document.getElementById("close-banner").addEventListener("click", function () {
+  document.getElementById("updates-banner").style.display = "none";
 });
 
