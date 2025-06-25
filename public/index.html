@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lugrasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lugrasimo&family=Style+Script&display=swap" rel="stylesheet">
   </head>
   
   <body>
@@ -47,8 +47,37 @@
       <!--<div class="card fade-in" style="transition-delay: 0.6s;"></div>-->
     </section>
 
+    <section class="highlights">
+      <div style="position:absolute; bottom:40%;">Who am I?</div>
+    </section>
+
     <section class="contacts">
-      <div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; height: 100%;">
+        <div style="height: 100%; width: 100%; padding: 2rem 7rem;">
+          <form class="email-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="91786e51-3e01-4fbd-b6ee-a058c8461dc0">
+
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <p class="email-texthead">Shoot me an email!</p>
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea style="resize: none; height:50%;"name="message" placeholder="Message here..." required></textarea>
+
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <!-- Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+
+        <div style="position: relative">
+          SOCIALS
+        </div>
+
       </div>
     </section>
 

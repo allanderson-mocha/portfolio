@@ -11,6 +11,7 @@ body {
 }
 
 nav {
+  width: 100%;
   background: rgb(85, 133, 142);
   padding: 1.5rem 2rem;
   display: flex;
@@ -52,14 +53,19 @@ a, a:hover, a:visited, a:active {
 
 .hero {
   height: 50vh;
+  width: 100%;
+  position: relative;
   background: url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .overlay {
+  position: relative;
+  z-index: 2;
   background: rgba(0,0,0,0.6);
   padding: 2rem;
   border-radius: 10px;
@@ -72,6 +78,7 @@ a, a:hover, a:visited, a:active {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
+  height: 20vh;
 }
 
 .card {
@@ -100,9 +107,11 @@ a, a:hover, a:visited, a:active {
 }
 
 #updates-banner {
+  position: fixed;
+  left: 0;
+  width: 100%;
   font-family: Roboto;
-  background: white;
-  background-color: rgb(254, 214, 119);
+  background: rgb(254, 214, 119);
   border-bottom: 1px solid #d6d6d687;
   display: flex;
   justify-content: space-between;
@@ -121,4 +130,58 @@ a, a:hover, a:visited, a:active {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.contacts {
+  position: relative;
+  background-color: rgb(255, 229, 196);
+  height: 83vh;
+}
+
+.highlights {
+  position: relative;
+  background-image: url('1987776_1.jpg');
+  margin-top: 6%;
+  height: 83vh;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+  background-color: #e1a97b;
+  border: solid;
+  border-width: 1rem;
+  border-color: rgba(236, 214, 186, 0.514);
+}
+
+.email-texthead {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  font-family: 'Style Script','Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.email-form input, textarea {
+  width: 90%;
+}
+
+.email-form button {
+  width: 50%;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 0.2rem;
+  transition: 0.2s;
+  border: none;
+  padding: 0.3rem;
+  font-family: 'Lugrasimo', 'Arial';
+}
+
+.email-form button:hover {
+  background-color: rgb(255, 252, 242);
+  color: black;
+  cursor: pointer;
 }
