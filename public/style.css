@@ -6,25 +6,27 @@
 
 body {
   line-height: 1.6;
-  background: #ececec;
+  background: white;
   color: #333;
+  font-family: Roboto;
 }
 
 nav {
   width: 100%;
-  background: rgb(85, 133, 142);
+  background: rgb(249, 218, 177);
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #cccccc97;
-  color: white;
+  color: black;
   font-weight: 500;
   transition: background 0.3s;
 }
 
 nav.sticky-active{
   background: black;
+  color: white;
 }
 
 a, a:hover, a:visited, a:active {
@@ -82,7 +84,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .card {
-  background: white;
+  background: rgb(247, 202, 143);
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -135,14 +137,14 @@ a, a:hover, a:visited, a:active {
 .contacts {
   position: relative;
   background-color: rgb(255, 229, 196);
-  height: 83vh;
+  height: 50vh;
 }
 
 .highlights {
   position: relative;
   background-image: url('1987776_1.jpg');
   margin-top: 6%;
-  height: 83vh;
+  /*height: 83vh;*/
 }
 
 .email-form {
@@ -150,7 +152,6 @@ a, a:hover, a:visited, a:active {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  gap: 1rem;
   background-color: #e1a97b;
   border: solid;
   border-width: 1rem;
@@ -160,12 +161,14 @@ a, a:hover, a:visited, a:active {
 .email-texthead {
   text-align: center;
   color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Style Script','Franklin Gothic Medium', Arial, sans-serif;
+  line-height: 4rem;
 }
 
 .email-form input, textarea {
   width: 90%;
+  margin-bottom: 0.5rem;
 }
 
 .email-form button {
@@ -177,6 +180,8 @@ a, a:hover, a:visited, a:active {
   transition: 0.2s;
   border: none;
   padding: 0.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   font-family: 'Lugrasimo', 'Arial';
 }
 
@@ -184,4 +189,30 @@ a, a:hover, a:visited, a:active {
   background-color: rgb(255, 252, 242);
   color: black;
   cursor: pointer;
+}
+
+.social-media {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: 100%;
+  justify-content: center;
+}
+
+.social-media h1 {
+  position: relative;
+  text-align: center;
+  font-size: 1.6rem; 
+  font-family: Roboto; 
+  align-items: center;
+  padding-right: 7rem;
+}
+
+.social-media img {
+  align-items: center;
+}
+
+.social-media p {
+  padding-left: 0.8rem;
+  font-weight: 5  00;
 }

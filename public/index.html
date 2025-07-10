@@ -48,7 +48,7 @@
     </section>
 
     <section class="highlights">
-      <div style="position:absolute; bottom:40%;">Who am I?</div>
+      <div style="position:absolute; bottom:40%;"></div>
     </section>
 
     <section class="contacts">
@@ -60,8 +60,8 @@
 
             <!-- Form Inputs. Each input must have a name="" attribute -->
             <p class="email-texthead">Shoot me an email!</p>
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
             <textarea style="resize: none; height:50%;"name="message" placeholder="Message here..." required></textarea>
 
             <!-- Honeypot Spam Protection -->
@@ -74,11 +74,20 @@
           </form>
         </div>
 
-        <div style="position: relative">
-          SOCIALS
+        <section class="social-media">  
+          <h1>SOCIALS</h1>
+          <div style="display: grid; height: 65%; width:100%; grid-template-rows: 1fr 1fr 1fr; padding-right: 7rem;">
+            <a href="https://github.com/allanderson-mocha" target="_blank"><div style="display: grid; grid-template-columns: 3rem 1fr; align-items: center;"><img src="github-mark-white.png" style="height: 2rem; width: 2rem;"/><p>allanderson-mocha</p></div></a>
+            <a href="https://www.instagram.com/njames.mocha/" target="_blank"><div style="display: grid; grid-template-columns: 3rem 1fr; align-items: center;"><img src="instagram-svgrepo-com.svg" style="height: 2rem; width: 2rem;"/><p>njames.mocha</p></div></a>
+            <a href="https://www.linkedin.com/in/allan-anderson-6a06a3258/" target="_blank"><div style="display: grid; grid-template-columns: 3rem 1fr; align-items: center;"><img src="linkedin-svgrepo-com.svg" style="height: 2rem; width: 2rem;"/><p>Allan Anderson</p></div></a>
+          </div>
         </div>
 
       </div>
+    </section>
+
+    <section id="copyright" style="text-align: center; background-color: rgb(255, 229, 196); padding-bottom: 1rem; font-weight: bold;">
+      © 2025 Allan Anderson. All rights reserved.
     </section>
 
     <script src="script.js"></script>
