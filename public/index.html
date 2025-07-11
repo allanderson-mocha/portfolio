@@ -14,82 +14,84 @@
   </head>
   
   <body>
-    <section class="sticky-wrapper">
-      <nav>
-        <div style="font-family: Lugrasimo, Roboto, sans-serif; font-size: 1.2rem; flex: 2; font-weight: 500;">Allan Anderson</div>
-        <div class="menu-bar">
-          <div class="menu-option"><a href="">MY LIFE</a></div>
-          <div class="menu-option"><a href="">MY WORK</a></div>
-          <div class="menu-option"><a href="">MY DREAM</a></div>
-        </div>
-        <div style="font-family: Roboto, sans-serif; font-weight: 600; display: flex; flex: 2; justify-content:end;">
-          <a href="https://drive.google.com/file/d/11M4CrvhuC9pN6Sanh3MR4WEFlkg9gpB2/view?usp=sharing" target="_blank">RESUME</a>
-        </div>
-      </nav>
-
-      <div id="updates-banner">
-        <span>This website is still extremely barebones! Changes and improvements will appear as I learn the secret arts of HTML and CSS. <strong>Current version: 0.20</strong></span>
-        <button id="close-banner">&times;</button>
-      </div>
-    </section>
-
-    <section class="hero">
-      <div class="overlay">
-        <h1>Welcome to My Projects</h1>
-        <p>Explore the things I've made</p>
-      </div>
-    </section>
-
-    <section class="grid">
-      <a href="https://github.com/allanderson-mocha/SCavenger" target="_blank" class="card fade-in" style="transition-delay: 0s;">The SCavenger</a>
-      <a href="https://github.com/allanderson-mocha/VerilogSnake" target="_blank" class="card fade-in" style="transition-delay: 0.2s;">Snake in Verilog!</a>
-      <a href="https://github.com/allanderson-mocha/portfolio" target="_blank" class="card fade-in" style="transition-delay: 0.4s;">This very website! (WIP)</a>
-      <!--<div class="card fade-in" style="transition-delay: 0.6s;"></div>-->
-    </section>
-
-    <section class="highlights">
-      <div style="position:absolute; bottom:40%;"></div>
-    </section>
-
-    <section class="contacts">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; height: 100%;">
-        <div style="height: 100%; width: 100%; padding: 2rem 7rem;">
-          <form class="email-form" action="https://api.web3forms.com/submit" method="POST">
-            <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="91786e51-3e01-4fbd-b6ee-a058c8461dc0">
-
-            <!-- Form Inputs. Each input must have a name="" attribute -->
-            <p class="email-texthead">Shoot me an email!</p>
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea style="resize: none; height:50%;"name="message" placeholder="Message here..." required></textarea>
-
-            <!-- Honeypot Spam Protection -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-            <!-- Custom Confirmation / Success Page -->
-            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-
-            <button type="submit">SUBMIT</button>
-          </form>
-        </div>
-
-        <section class="social-media">  
-          <h1>SOCIALS</h1>
-          <div style="display: grid; height: 65%; width:100%; grid-template-rows: 1fr 1fr 1fr; padding-right: 7rem;">
-            <a href="https://github.com/allanderson-mocha" target="_blank"><div style="display: grid; grid-template-columns: 3rem 1fr; align-items: center;"><img src="github-mark-white.png" style="height: 2rem; width: 2rem;"/><p>allanderson-mocha</p></div></a>
-            <a href="https://www.instagram.com/njames.mocha/" target="_blank"><div style="display: grid; grid-template-columns: 3rem 1fr; align-items: center;"><img src="instagram-svgrepo-com.svg" style="height: 2rem; width: 2rem;"/><p>njames.mocha</p></div></a>
-            <a href="https://www.linkedin.com/in/allan-anderson-6a06a3258/" target="_blank"><div style="display: grid; grid-template-columns: 3rem 1fr; align-items: center;"><img src="linkedin-svgrepo-com.svg" style="height: 2rem; width: 2rem;"/><p>Allan Anderson</p></div></a>
+    <div class="page-wrapper">
+      <section class="sticky-wrapper">
+        <nav>
+          <div style="font-family: Lugrasimo, Roboto, sans-serif; font-size: 1.2rem; flex: 2; font-weight: 500;">Allan Anderson</div>
+          <div class="menu-bar">
+            <div class="menu-option"><a href="">MY LIFE</a></div>
+            <div class="menu-option"><a href="">MY WORK</a></div>
+            <div class="menu-option"><a href="">MY DREAM</a></div>
           </div>
+          <div style="font-family: Roboto, sans-serif; font-weight: 600; display: flex; flex: 2; justify-content:end;">
+            <a href="https://drive.google.com/file/d/11M4CrvhuC9pN6Sanh3MR4WEFlkg9gpB2/view?usp=sharing" target="_blank">RESUME</a>
+          </div>
+        </nav>
+
+        <div id="updates-banner">
+          <span>This website is still extremely barebones! Changes and improvements will appear as I learn the secret arts of HTML and CSS. <strong>Current version: 0.22</strong></span>
+          <button id="close-banner">&times;</button>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section class="hero">
+        <div class="overlay">
+          <h1>Welcome to My Projects</h1>
+          <p>Explore the things I've made</p>
+        </div>
+      </section>
 
-    <section id="copyright" style="text-align: center; background-color: rgb(255, 229, 196); padding-bottom: 1rem; font-weight: bold;">
-      © 2025 Allan Anderson. All rights reserved.
-    </section>
+      <section class="grid">
+        <a href="https://github.com/allanderson-mocha/SCavenger" target="_blank" class="card fade-in" style="transition-delay: 0s;">The SCavenger</a>
+        <a href="https://github.com/allanderson-mocha/VerilogSnake" target="_blank" class="card fade-in" style="transition-delay: 0.2s;">Snake in Verilog!</a>
+        <a href="https://github.com/allanderson-mocha/portfolio" target="_blank" class="card fade-in" style="transition-delay: 0.4s;">This very website! (WIP)</a>
+        <!--<div class="card fade-in" style="transition-delay: 0.6s;"></div>-->
+      </section>
 
-    <script src="script.js"></script>
+      <section class="highlights">
+        <div style="position:absolute; bottom:40%;"></div>
+      </section>
+
+      <section class="contacts">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; height: 100%;">
+          <div style="height: 100%; width: 100%; padding: 2rem 7rem;">
+            <form class="email-form" action="https://api.web3forms.com/submit" method="POST">
+              <!-- Replace with your Access Key -->
+              <input type="hidden" name="access_key" value="91786e51-3e01-4fbd-b6ee-a058c8461dc0">
+
+              <!-- Form Inputs. Each input must have a name="" attribute -->
+              <p class="email-texthead">Shoot me an email!</p>
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea style="resize: none; height:50%;"name="message" placeholder="Message here..." required></textarea>
+
+              <!-- Honeypot Spam Protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+              <!-- Custom Confirmation / Success Page -->
+              <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+
+          <section class="social-media">  
+            <h1>SOCIALS</h1>
+            <div class= "socials-container">
+              <a href="https://github.com/allanderson-mocha" target="_blank"><div class="social-button"><img src="github-mark.png" style="height: 2rem; width: 2rem;"/><p>allanderson-mocha</p></div></a>
+              <a href="https://www.instagram.com/njames.mocha/" target="_blank"><div class="social-button"><img src="image_2025-06-25_103258185.png" style="height: 2rem; width: 2rem;"/><p>njames.mocha</p></div></a>
+              <a href="https://www.linkedin.com/in/allan-anderson-6a06a3258/" target="_blank"><div class="social-button"><img src="LinkedIn_logo_initials.png" style="height: 2rem; width: 2rem;"/><p>Allan Anderson</p></div></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="copyright" style="text-align: center; background-color: #E6E6E6; padding-bottom: 1rem; font-weight: bold;">
+        © 2025 Allan Anderson. All rights reserved.
+      </section>
+
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
