@@ -206,9 +206,9 @@ a.card.fade-in.visible:hover{
 
 .socials-container {
   display: grid; 
-  height: 65%; 
+  height: 45%; 
   width:100%; 
-  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
   padding-right: 6rem;
 }
 
