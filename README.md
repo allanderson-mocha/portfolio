@@ -1,42 +1,69 @@
-# About This Portfolio
-I've completed a good number of projects — and many more are on the way! Unfortunately, my resume can only showcase so much.
+# React + TypeScript + Vite
 
-So what's the solution?
-Do what every coder eventually does (whether seriously or not): build a portfolio website.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This site presents my most notable projects, complete with detailed descriptions and visuals, to give a full picture of my skills and experience.
+Currently, two official plugins are available:
 
-As a bonus, this portfolio is a project in itself! Why? Because as an Electrical and Computer Engineering student, my front-end web development skills have historically been a weak spot.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-To close that gap, I built this website completely from scratch — no templates and no prior experience in front-end. I:
+## Expanding the ESLint configuration
 
-- Set up an Oracle Cloud server to host the site using Node.js
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-- Registered my own domain
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-- Wrote everything in HTML, CSS, and JavaScript
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
-The process has been a deep learning experience as I explore modern web development tools and best practices to complement my engineering background.
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-### Current Version: v0.22
-The site currently includes:
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-- Access to my resume
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-- GitHub links for three projects
-
-- My LinkedIn and GitHub profiles
-
-- A contact form to email me directly
-
-And there’s a lot more planned.
-
-
-## URL
-
-[allananderson.dev](https://www.allananderson.dev)
-
-## Content and Assets
-- All **code** is licensed under the [MIT License](LICENSE).
-- Original **images, writing, and design** are © Allan Anderson and are not open for reuse without permission.
-- GitHub and LinkedIn logos are trademarks of their respective companies. They are used here purely for identification and navigation purposes.
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
